@@ -1,2 +1,3 @@
-# qa-for-ta
-Exploring Automated Question Answering Methods for Teaching Assistance
+# qa-for-ta: Exploring Automated Question Answering Methods for Teaching Assistance
+
+## Code related to AIED 2020 submission coming soon!
