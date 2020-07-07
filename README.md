@@ -22,13 +22,13 @@ Our answerability classifier was trained via 2 steps: training first on the [SQu
 ## Pipeline (process documents through producing answers):
 
 1. Preprocess docs
-    - Build the json file from all of the individual documents: python parse_pdf.py  (make sure all file paths in this file are set correctly for your setup)
+    - Build the json file from all of the individual documents: <pre><code>python parse_pdf.py  (make sure all file paths in this file are set correctly for your setup)</pre></code>
 
 2. Prepare docs
-    - Build database: python \<path-to-DrQA\>/DrQA/scripts/retriever/build_db.py \<path-to-data-in-JSON-format\>/docs.json \<output-path-db\>/docs.db
-    - Build tf-idf features: python \<path-to-DrQA\>/DrQA/scripts/retriever/build_tfidf.py \<output-path-db\>/docs.db \<output-path-tf-idf\>    (tf-idf file name will be generated automatically)
+    - Build database: <pre><code>python \<path-to-DrQA\>/DrQA/scripts/retriever/build_db.py \<path-to-data-in-JSON-format\>/docs.json \<output-path-db\>/docs.db</pre></code>
+    - Build tf-idf features: <pre><code>python \<path-to-DrQA\>/DrQA/scripts/retriever/build_tfidf.py \<output-path-db\>/docs.db \<output-path-tf-idf\>    (tf-idf file name will be generated automatically)</pre></code>
 
 3. Generate candidate answers:
-    - python physics_drqa_two_step.py  (make sure all file paths in this file are set correctly for your setup)
+    <pre><code>python physics_drqa_two_step.py  (make sure all file paths in this file are set correctly for your setup)</pre></code>
     - this will generate a csv file with candidate answers (includes each document score, answer score, answerability score).
 
