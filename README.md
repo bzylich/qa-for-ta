@@ -30,5 +30,5 @@ Our answerability classifier was trained via 2 steps: training first on the [SQu
 
 3. Generate candidate answers:
     <pre><code>python physics_drqa_two_step.py  (make sure all file paths in this file are set correctly for your setup)</pre></code>
-    - this will generate a csv file with candidate answers (includes each document score, answer score, answerability score).
+    - This will generate a csv file with candidate answers (includes each document score, answer score, answerability score)
 
