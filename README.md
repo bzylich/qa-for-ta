@@ -6,11 +6,18 @@ This repository contains source code related to this AIED 2020 paper: https://li
 If you have any questions, please contact me at bzylich@umass.edu.
 
 ## Requirements
+- Python 3
 - DrQA (installation instructions: https://github.com/facebookresearch/DrQA)
 - CoreNLP (included in DrQA instructions)
 - PyTorch
 - PyTorch Lightning (https://github.com/PyTorchLightning/pytorch-lightning)
 - Huggingface Transformers (https://github.com/huggingface/transformers)
+
+## Pretrained answerability classifier
+Our pretrained answerability classifier can be downloaded here: https://drive.google.com/file/d/1zdBfffbYIDRdg7cqphz7vAKMDeJgfSCv/view?usp=sharing
+
+## Training the answerability classifier from scratch
+Our answerability classifier was trained via 2 steps: training first on the SQuAD 2.0 dataset (using bert_lightning_adapter.py) and then finetuning on Google's Natural Questions dataset (using bert_lightning_adapter_transfer_nq.py).
 
 ## Pipeline (process documents through producing answers):
 
